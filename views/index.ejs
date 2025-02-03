@@ -7,46 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Get to School Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Kanit&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div id="header">
+        <h1>KRIS BOWMAN</h1>
+        <div id="pages">
+            <a href="/">Home</a>
+            <a href="/aboutMe">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </div>
+    <div class="intro" id="top">
         <h1>Hello, I'm Kris.</h1>
         <h2>I'm a programming student, an artist, and a future web developer.</h2>
-        <div class="pageNav">
-            <span><i class="arrow"></i> Page Navigation</span>
-            <div class="pageNav-drop">
-                <ul>
-                    <li><a href="/aboutMe">About Me</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                </ul>
-            </div>
-        </div>
     </div>
-    <div class="about" id="top">
-        <img src="swiggityswirl.jpg" alt="floated image" width="100" height="100">
+    <div class="about">
         <h2>About this Site</h2>
-        <p>This website was made for the final project of my high school programming class. In an effort to learn HTML,
-            the class has been
-            making websites using a combination of the text editor VScode and the website hosting service Github. We've
-            also been using CSS to style the website.</p>
-        <div class="aboutTest">
-            <h3>About Test Page</h3>
-            <p>The <a href="index_test.html">Test Page</a> is made for testing HTML code for class. It will change based
-                on the assignement we are
-                completing
-                at the time. If you navigate to the test page, please be warned that it does not line to the same style
-                sheet as the rest of the site, nor does it have a way to navigate between pages. Hit the back arrow in
-                your
-                browser to navigate away from it and back to the rest of the site.</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <a class="toTop" href="#top">Back to Top</a>
+        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Nam condimentum pellentesque sapien mollis morbi
+            vehicula senectus condimentum morbi. Tortor ipsum malesuada parturient metus vestibulum et metus. Vitae
+            sollicitudin venenatis amet varius vestibulum aptent convallis. Nostra primis magna posuere inceptos
+            accumsan. Metus libero pellentesque dignissim dictum vitae duis eleifend mattis quis. Eu taciti at quisque
+            ultricies imperdiet mattis nulla convallis. Vitae auctor tincidunt velit odio ante nunc potenti. Donec vel
+            maecenas dignissim fames fringilla rhoncus.</p>
+        <br>
+        <p>Ipsum nibh tristique congue nostra aliquet integer pellentesque varius mauris. Placerat dis fringilla
+            pellentesque magna litora fames lobortis donec? Morbi aliquam at vehicula diam finibus luctus sed. Porta
+            molestie mi vestibulum etiam at rutrum nec lobortis volutpat. Dis senectus litora ligula pulvinar habitasse
+            nullam. Faucibus lacinia vulputate euismod non integer erat! Hendrerit tincidunt elementum non porttitor
+            lacinia curae nascetur bibendum.</p>
     </div>
 </body>
+
+<script>
+    document.getElementById("pages").querySelectorAll("a").forEach((link) => {
+        if (link.href === window.location.href) {
+            link.classList.add("current");
+        };
+    });
+</script>
 
 </html>

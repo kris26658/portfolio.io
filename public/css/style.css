@@ -1,145 +1,59 @@
 html {
     overflow: scroll;
-    background-color: rgb(39, 39, 39);
+    background-color: #2d4e43;
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal
 }
 
 #header {
-    display: block;
+    display: inline-flex;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(103, 150, 150);
-    padding: 30px;
-    color: rgb(255, 255, 255);
-    font-family: 'Kanit', sans-serif;
+    padding: 1%;
+    background-color: #ffffff;
 }
 
-#header h1 {
-    display: inline;
+#pages {
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    margin: 1%;
+    padding: 1%;
+    background-color: #58a36b;
+    border-radius: 25px;
 }
 
-#header h2 {
+#pages a {
     display: inline-block;
-}
-
-
-.pageNav {
-    display: block;
-    float: right;
-    background-color: rgb(100, 115, 115);
-    padding: 12px;
-    margin: 30px;
-    font-size: 24px;
-}
-
-.pageNav a {
+    color: #ffffff;
+    background-color: #58a36b;
+    text-decoration: none;
     text-align: center;
-    color: rgb(255, 255, 255)
+    padding: 5%;
+    margin: 1%;
+    border-radius: 100%;
+    flex: 1 1 auto
 }
 
-.pageNav-drop {
-    position: absolute;
-    display: none;
-    padding: 10px;
-    font-size: 18px;
-    background-color: rgb(119, 172, 172);
+#pages a.current {
+    background-color: #498558;
 }
 
-.pageNav:hover .pageNav-drop {
+.intro {
+    color : #ffffff;
     display: block;
-}
-
-.arrow {
-    display: inline-block;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    padding: 3px;
-    margin: 3px;
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-}
-
-img {
-    float: right;
-}
-
-#top {
-    scroll-behavior: smooth;
+    margin: 5% 10%;
 }
 
 .about {
     display: block;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     padding: 30px;
-    border: 7px solid rgb(0, 0, 0);
     margin: 10% 20%;
-    font-family: 'Kanit', sans-serif;
-}
-
-.aboutTest p {
-    font-size: 16px;
-}
-
-.getToSchool {
-    display: block;
-    background-color: rgb(255, 255, 255);
-    padding: 30px;
-    border: 7px solid rgb(0, 0, 0);
-    margin: 10% 20%;
-    font-family: 'Kanit', sans-serif;
-}
-
-.toTop {
-    display: block;
-    display: center;
-    width: 5%;
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    margin: 15px;
-    font-family: 'Kanit', sans-serif;
-}
-
-@media only screen and (max-width: 768px) {
-    #header {
-        display: block;
-        padding: 2px 15px;
-    }
-
-    #header h1 {
-        font-size: 24px;
-    }
-
-    .pageNav {
-        padding: 2px;
-        margin: 10px;
-        font-size: 18px;
-    }
-
-    .pageNav-drop {
-        padding: 5px;
-        font-size: 16px;
-    }
-
-    .about {
-        padding: 10px;
-        margin: 45% 8%;
-    }
-
-    .aboutTest p {
-        font-size: 12px;
-    }
-
-    .getToSchool {
-        padding: 10px;
-        margin: 45% 8%;
-    }
-
-    .toTop {
-        width: 25%;
-        padding: 10px;
-        margin: 15px;
-    }
-
 }
