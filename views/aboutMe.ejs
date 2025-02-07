@@ -5,51 +5,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Kanit&display=swap"
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kris Bowman: About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <div id="header">
-        <h1>Kris Bowman</h1>
-        <div class="pageNav">
-            <span><i class="arrow"></i> Page Navigation</span>
-            <div class="pageNav-drop">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/projects">Projects</a></li>
-                </ul>
-            </div>
+        <p>KRIS BOWMAN</p>
+        <div id="pages">
+            <a href="/">Home</a>
+            <a href="/aboutMe">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
         </div>
     </div>
-    <div class="about" id="top">
-        <img src="swiggityswirl.jpg" alt="floated image" width="100" height="100">
-        <h2>About Me</h2>
-        <p>Hi!</p>
-        <p>My name is Kris.</p>
-        <p>I'm a technical high school student learning how to program. I hope to be able to become a website or game
-            developer once I get out of school.</p>
-        <p>Outside of school, I have a lot of hobbies. I love drawing, reading, volleyball, and playing video games with
-            my friends.</p>
-        <p>Besides what I'm working on for school, I have a small side project that I've been working on for a while.
-            It's a sci-fi/fantasy RPG set on a faraway moon humans attmepted to settle decades before. Jason, a hot-pink
-            haired, anxious teenager, stumbles upon the abandoned teleporter and is accidnetly transported halfway
-            across the galaxy. In his quest to get back home, he meets Wallis, a shapeshifting Chartarum (humanoid
-            aliens that evolved from black mold). Together they take on the world, fighting agianst the tyranical
-            government for the future of the galaxy.</p>
-        <p>It's currently still in the planning phase :)</p>
-        <p>Pictures from game developement:</p>
-        <p>Jason (left) Wallis (right)</p>
-    </div>
-    </div>
 
-    <div class="footer">
-        <a class="toTop" href="#top">Back to Top</a>
+    <div id="main">
+        <div class="intro">
+            <h1>Hey there, my name is Kris.</h1>
+            <p>I'm a programming student, an artist, and a web developer.</p>
+        </div>
+
+        <div id="studentTitle" class="about">
+            <h2>Student</h2>
+        </div>
+
+        <div id="aboutText" class="about">
+            <p>I'm a junior at York County School of Technology, a technical high-school, where I'm studying programming
+                and web development. Throughout my time here, I've learned the following languages:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>C# (basics)</li>
+            </ul>
+            <p>In my free time, I work on creating art. I use digital drawing tools for most of my pieces, but I dabble in tradtional painting.</p>
+            <p>When I'm not busy with schoolwork or art, I'm usually reading, playing video games, or hanging out with my friends.</p>
+        </div>
+        <div id="aboutTitle" class="about">
+            <h2>About Me</h2>
+        </div>
     </div>
-    <script type='text/javascript'
-        src="https://liveycstech-my.sharepoint.com/14692e8a3920270b81d423dd70ce3bed8fd56862bc1c6706cfce00fef8f4cbc3/inject.js"></script>
 </body>
+
+<script>
+    document.getElementById("pages").querySelectorAll("a").forEach((link) => {
+        if (link.href === window.location.href) {
+            link.classList.add("current");
+        };
+    });
+</script>
 
 </html>

@@ -1,4 +1,4 @@
-//to install required modules in the terminal: type "npm i express express-session ejs jsonwebtoken sqlite3 connect-sqlite3 socket.io path"
+//to install required modules in the terminal: type "npm i express express-session ejs path"
 
 //import external modules
 const express = require("express");
@@ -31,6 +31,7 @@ const session_MIDDLEWARE = session({
 
 app.set("view engine", "ejs"); //set ejs as the view engine
 app.set("views", path.join(__dirname, "../views")); //configure "views" directory to be the default for views
+app.set("js", path.join(__dirname, "/js")); //configure "js" directory to be the default for javaScript
 app.set("css", path.join(__dirname, "/css")); //configure "css" directory to be the default for stylings
 
 app.use(session_MIDDLEWARE); //configure the server to use middleware
